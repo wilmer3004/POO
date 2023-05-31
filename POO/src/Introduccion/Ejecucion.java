@@ -2,8 +2,6 @@ package Introduccion;
 
 import java.util.Scanner;
 
-import Introduccion.Tecnologia;
-
 public class Ejecucion {
     public static void main(String[] args) {
         // Declaramos variables
@@ -14,7 +12,7 @@ public class Ejecucion {
         // Instanciar la clase o crear objeto
         Tecnologia computador = new Tecnologia();
         System.out.println("Va a registrar los datos de la tecnología");
-        computador.registarTecnologia();
+        computador.registrarTecnologia();
         System.out.println("Desea Consultar o actualizar un dato registrado si o no");
         respuesta = entrada.nextLine();
 
@@ -33,9 +31,11 @@ public class Ejecucion {
                 default:computador.error();
                     break;
             }
+            entrada.nextLine();
             System.out.println("¿Desea volver al actualizar o consultar algún dato? si o no:");
+            respuesta = entrada.nextLine();
         }
-
+        computador.limpiar();
         // Limpiamos buffer
         entrada.close();
 
