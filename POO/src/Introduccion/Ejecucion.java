@@ -11,6 +11,7 @@ public class Ejecucion {
         Scanner entrada = new Scanner(System.in);
         // Instanciar la clase o crear objeto
         Tecnologia computador = new Tecnologia();
+        computador.edad(2005);
         System.out.println("Va a registrar los datos de la tecnología");
         computador.registrarTecnologia();
         System.out.println("Desea Consultar o actualizar un dato registrado si o no");
@@ -35,9 +36,10 @@ public class Ejecucion {
             System.out.println("¿Desea volver al actualizar o consultar algún dato? si o no:");
             respuesta = entrada.nextLine();
         }
-        computador.limpiar();
+        
         // Limpiamos buffer
         entrada.close();
+        computador.limpiar();
 
 
     }

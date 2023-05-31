@@ -71,16 +71,14 @@ public class Tecnologia {
     public void modificarTecnologia() {
         // Instanciamos la clase Scanner
         // Solicitamos datos y los capturamos
-        System.out.println("ingrese el nuevo nombre de la tecnología que dígito, el cual actualmente es: " + nombreProcesador );
-        entrada.nextLine();
-        nombreProcesador  = entrada.nextLine();
-        
+        System.out.println("ingrese el nuevo nombre de la tecnología que dígito, el cual actualmente es: " + nombreTecnologia );
+
+        nombreTecnologia  = entrada.nextLine();
         System.out.println("Ingrese la nueva capacidad de memoria que dígito, la cual actualmente es: " + capacidadMemoria );
         capacidadMemoria  = entrada.nextInt();
+        entrada.nextLine();
         System.out.println("Ingrese el nuevo nombre del procesador que dígito, el cual actualmente es: " + nombreProcesador );
-        nombreProcesador  = entrada.nextLine();  
-        // Limpiamos buffer
-        entrada.close();
+        nombreProcesador = entrada.nextLine();
     }
     public void error(){
         System.out.println("ERROR !! dígito un dato no valido");
