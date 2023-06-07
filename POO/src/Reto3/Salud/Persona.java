@@ -1,4 +1,4 @@
-package reto1.Salud;
+package Reto3.Salud;
 
 import java.util.Scanner;
 
@@ -28,6 +28,8 @@ public class Persona {
      private double estatura;
      private int edad;
      private String sexo;
+
+
      // Creamos los métodos
  
      // Este meto servirá para solicitar los datos
@@ -68,18 +70,23 @@ public class Persona {
          System.out.println("7. " + edad);
          System.out.println("8. " + sexo);
      }
+
      // Este método sirve para calcular el IMC
-     public void calcularImc() {
+     public  String calcularImc() {
         double pesoActual = 0;
         pesoActual = peso/Math.pow(estatura, 2);
         if (pesoActual>0 && pesoActual<20) {
-            System.out.println("Su peso esta por debajo de lo ideal.");
+            return "PESOBAJO";
         }
-        else if (pesoActual>=20 && pesoActual<=25) {
-            System.out.println("Su peso es ideal.");
+        else if (pesoActual>=20 && pesoActual<=25) { 
+            return "PESOIDEAL";
         }
         else if(pesoActual>25){
-            System.out.println("Usted actualmente tiene sobrepeso.");
+            return "SOBREPESO";
+        
+        }
+        else{
+            return "error";
         }
      }
     public void mayorEdad(){
@@ -92,4 +99,70 @@ public class Persona {
             System.out.println("Usted ingreso un dato no valido.");
         }
     }
+
+    public String getTipoDoc() {
+        return tipoDoc;
+    }
+
+    public int getDocumento() {
+        return documento;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public double getEstatura() {
+        return estatura;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setTipoDoc(String tipoDoc) {
+        this.tipoDoc = tipoDoc;
+    }
+
+    public void setDocumento(int documento) {
+        this.documento = documento;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+    public void setEstatura(double estatura) {
+        this.estatura = estatura;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+    
+    
 }
