@@ -11,8 +11,18 @@ public class Calculadora {
         this.num1 = num1;
         this.num2 = num2;
     }
+    // Sobrecarga de un método
+    public Double sumar(){
+        Double suma = 0.0; 
+        suma= num1 + num2;
+        System.out.println("La suma de los numeros"+num1+" y "+""+num2+" es: " + suma);
+        return suma;
+    }
+
     // Sumar
     public Double sumar(Double num1, Double num2) {
+        this.num1 = num1;
+        this.num2 = num2;
         Double suma = 0.0; 
         suma= num1 + num2;
         System.out.println("La suma de los numeros"+num1+" y "+""+num2+" es: " + suma);
@@ -37,4 +47,6 @@ public class Calculadora {
         return division;
     }
     
+    
 }
+
