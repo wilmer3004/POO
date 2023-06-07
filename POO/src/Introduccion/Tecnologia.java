@@ -8,13 +8,17 @@ public class Tecnologia {
     private int capacidadMemoria  ;
     private String nombreProcesador;
     private String nombreTecnologia;
-    public void crud() {
-        
-    }
     Scanner entrada = new Scanner(System.in);
     // Métodos
     // Método constructor
     public Tecnologia() {
+    }
+    
+    public Tecnologia(int idTecnologia, int capacidadMemoria, String nombreProcesador, String nombreTecnologia) {
+        this.idTecnologia = idTecnologia;
+        this.capacidadMemoria = capacidadMemoria;
+        this.nombreProcesador = nombreProcesador;
+        this.nombreTecnologia = nombreTecnologia;
     }
 
     // Este método sirve para capturar los datos que requerimos de tecnología
@@ -97,6 +101,48 @@ public class Tecnologia {
 public void limpiar() {
     entrada.close();
 }
+
+public String getNombreTecnologia() {
+    return nombreTecnologia;
+}
+
+public void setNombreTecnologia(String nombreTecnologia) {
+    this.nombreTecnologia = nombreTecnologia;
+}
+
+public int getIdTecnologia() {
+    return idTecnologia;
+}
+
+public int getCapacidadMemoria() {
+    return capacidadMemoria;
+}
+
+public String getNombreProcesador() {
+    return nombreProcesador;
+}
+
+public Scanner getEntrada() {
+    return entrada;
+}
+
+public void setIdTecnologia(int idTecnologia) {
+    this.idTecnologia = idTecnologia;
+}
+
+public void setCapacidadMemoria(int capacidadMemoria) {
+    this.capacidadMemoria = capacidadMemoria;
+}
+
+public void setNombreProcesador(String nombreProcesador) {
+    this.nombreProcesador = nombreProcesador;
+}
+
+public void setEntrada(Scanner entrada) {
+    this.entrada = entrada;
+}
+
+
 
 
 

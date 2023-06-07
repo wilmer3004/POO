@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Ejecucion",
+            "request": "launch",
+            "mainClass": "Introduccion.Figuras.Ejecucion",
+            "projectName": "POO_8d75df06"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Ejecucion",
+            "request": "launch",
+            "mainClass": "Introduccion.Ejecucion",
+            "projectName": "POO_8d75df06"
+        },
+        {
+            "type": "java",
+            "name": "Ejecucion2",
+            "request": "launch",
+            "mainClass": "Introduccion.Ejecucion2",
+            "projectName": "POO_8d75df06"
+        },
+        {
+            "type": "java",
+            "name": "Inicio",
+            "request": "launch",
+            "mainClass": "Reto2.Principal.Inicio",
+            "projectName": "POO_8d75df06"
+        },
+        {
+            "type": "java",
+            "name": "Inicio(1)",
+            "request": "launch",
+            "mainClass": "Reto3.Principal.Inicio",
+            "projectName": "POO_8d75df06"
+        },
+        {
+            "type": "java",
+            "name": "Inicio(2)",
+            "request": "launch",
+            "mainClass": "reto1.Principal.Inicio",
+            "projectName": "POO_8d75df06"
+        }
+    ]
+}

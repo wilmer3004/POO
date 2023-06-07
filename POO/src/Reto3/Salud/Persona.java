@@ -4,7 +4,19 @@ import java.util.Scanner;
 
 public class Persona {
     // Creamos el método constructor
-    public Persona() {
+    // Definimos los atributos
+     private String tipoDoc;
+    private int documento;
+     private String nombre;
+     private String apellido;
+     private double peso;
+     private double estatura;
+     private int edad;
+     private String sexo;
+
+
+     // Creamos los métodos
+     public Persona() {
     }
     
      public Persona(String tipoDoc, int documento, String nombre, String apellido, double peso, double estatura,
@@ -18,20 +30,6 @@ public class Persona {
         this.edad = edad;
         this.sexo = sexo;
     }
-
-    // Definimos los atributos
-     private String tipoDoc;
-    private int documento;
-     private String nombre;
-     private String apellido;
-     private double peso;
-     private double estatura;
-     private int edad;
-     private String sexo;
-
-
-     // Creamos los métodos
- 
      // Este meto servirá para solicitar los datos
      public void pedirDatos() {
          // Instanciamos la clase Scanner 
@@ -55,8 +53,7 @@ public class Persona {
          entrada.nextLine();
          System.out.println("Por favor ingrese su tipo de sexo: ");
          sexo = entrada.nextLine();
-         // Limpiamos el buffer
-         entrada.close();
+
      }
      // Este método sirve para mostrar los datos que ingreso la persona
      public void mostrarPersona() {
@@ -72,22 +69,10 @@ public class Persona {
      }
 
      // Este método sirve para calcular el IMC
-     public  String calcularImc() {
+     public  Double calcularImc() {
         double pesoActual = 0;
         pesoActual = peso/Math.pow(estatura, 2);
-        if (pesoActual>0 && pesoActual<20) {
-            return "PESOBAJO";
-        }
-        else if (pesoActual>=20 && pesoActual<=25) { 
-            return "PESOIDEAL";
-        }
-        else if(pesoActual>25){
-            return "SOBREPESO";
-        
-        }
-        else{
-            return "error";
-        }
+        return pesoActual;
      }
     public void mayorEdad(){
         if (edad>=18) {
