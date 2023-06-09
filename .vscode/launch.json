@@ -9,6 +9,13 @@
             "name": "Ejecucion",
             "request": "launch",
             "mainClass": "Introduccion.Figuras.Ejecucion",
+            "projectName": "POO_1fd2e4a"
+        },
+        {
+            "type": "java",
+            "name": "Ejecucion",
+            "request": "launch",
+            "mainClass": "Introduccion.Figuras.Ejecucion",
             "projectName": "POO_8d75df06"
         },
         {

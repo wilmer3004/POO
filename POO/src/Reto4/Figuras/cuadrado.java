@@ -1,4 +1,4 @@
-package Introduccion.Figuras;
+package Reto4.Figuras;
 
 import java.util.Scanner;
 
