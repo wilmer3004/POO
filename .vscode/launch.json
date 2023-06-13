@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Inicio",
+            "request": "launch",
+            "mainClass": "Reto2.Principal.Inicio",
+            "projectName": "POO_1fd2e4a"
+        },
+        {
+            "type": "java",
             "name": "Ejecucion",
             "request": "launch",
             "mainClass": "Introduccion.Figuras.Ejecucion",

@@ -6,7 +6,7 @@ public class Persona {
     // Creamos el método constructor
     public Persona() {
     }
-    
+    // Creamos el método constructor con parámetros
      public Persona(String tipoDoc, int documento, String nombre, String apellido, double peso, double estatura,
             int edad, String sexo) {
         this.tipoDoc = tipoDoc;
@@ -60,6 +60,7 @@ public class Persona {
      }
      // Este método sirve para mostrar los datos que ingreso la persona
      public void mostrarPersona() {
+         // Se muestran los atributos que se ingresaron por el usuario
          System.out.println("Los datos que usted ingreso son los siguientes: ");
          System.out.println("1. " + tipoDoc);
          System.out.println("2. " + documento);
@@ -72,23 +73,16 @@ public class Persona {
      }
 
      // Este método sirve para calcular el IMC
-     public  String calcularImc() {
+     public  Double calcularImc() {
+        // Declaramos la variable que nos servirá para calcular el IMC
         double pesoActual = 0;
+        // Realizamos la operacion
         pesoActual = peso/Math.pow(estatura, 2);
-        if (pesoActual>0 && pesoActual<20) {
-            return "PESOBAJO";
-        }
-        else if (pesoActual>=20 && pesoActual<=25) { 
-            return "PESOIDEAL";
-        }
-        else if(pesoActual>25){
-            return "SOBREPESO";
-        
-        }
-        else{
-            return "error";
-        }
+        return pesoActual;
+        // Retornamos el resultado que nos da pesoActual
+
      }
+    //  Este método sirve para definir según la edad del usuario si es mayor de edad o no 
     public void mayorEdad(){
         if (edad>=18) {
             System.out.println("Usted es mayor de edad.");
