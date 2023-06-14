@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ejecucion",
+            "request": "launch",
+            "mainClass": "Reto5.Ejecucion",
+            "projectName": "POO_8d75df06"
+        },
+        {
+            "type": "java",
+            "name": "Ejecucion3",
+            "request": "launch",
+            "mainClass": "Introduccion.Ejecucion3",
+            "projectName": "POO_8d75df06"
+        },
+        {
+            "type": "java",
             "name": "Inicio",
             "request": "launch",
             "mainClass": "Reto2.Principal.Inicio",
