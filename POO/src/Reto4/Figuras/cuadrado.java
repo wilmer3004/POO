@@ -32,7 +32,7 @@ public class cuadrado extends Figura{
         lado = entrada.nextInt();
         
     }
-// Este método servirá para calcular el area del Rectangulo
+// Este método servirá para calcular el area del Cuadrado
     public void calcularArea() {
         // Declaramos las variables
         float area;

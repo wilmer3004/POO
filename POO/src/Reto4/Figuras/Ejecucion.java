@@ -13,7 +13,7 @@ public class Ejecucion {
         Triangulo triangulo = new Triangulo();
         Trapecio trapecio = new Trapecio();
         Scanner entrada = new Scanner(System.in);
-        // Solicitamos si se desea averiguar el area de alguna f
+        // Solicitamos y capturamos si se desea averiguar el area de alguna figura
         System.out.println("¿Desea calcular el area de alguna figura? \n1. si\n2. no\nElija: ");
         respuesta = entrada.nextInt();
         // Creamos un bucle while para que se ejecute siempre y cuando la respuesta del usuario sea acertada
@@ -63,7 +63,7 @@ public class Ejecucion {
         System.out.println("Finalizo, gracias por utilizar nuestro programa...");
 
 // Limpiamos el buffer
-entrada.close();;
+entrada.close();
 
 
         

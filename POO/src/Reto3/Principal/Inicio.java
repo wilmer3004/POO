@@ -23,7 +23,7 @@ public class Inicio {
             System.out.println( "error");
         }
         empleado.mayorEdad();
-        // Ejecutamos con el objeto creado los métodos de la subClase
+        // Ejecutamos con el objeto creado con los métodos de la subClase Empleado 
         empleado.solicitarEmpleado(); 
         empleado.mostrarHorario();
     }
