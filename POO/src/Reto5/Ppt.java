@@ -4,13 +4,16 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Ppt implements Juego {
+    // Creamos los atributos de la clase de piedra papel o tijera
      private String nombre;
     private int opcionJugador;
     private int numAle;
     // Métodos constructor
     Scanner entrada = new Scanner(System.in);
+    // Creamos el metodo constructor sin parámetros
     public Ppt() {
     }
+    // Creamos el metodo constructor con parametros
     public Ppt(String nombre, int opcionJugador, int numAle) {
         this.nombre = nombre;
         this.opcionJugador = opcionJugador;
@@ -40,11 +43,12 @@ public class Ppt implements Juego {
 
     // Métodos
     
-    
+    // Este metodo sirve para solicitar el nombre del usuario y capturarlo
     public void iniciar() {
         System.out.println("Ingrese el nombre del jugador");
         nombre = entrada.nextLine();
     }
+    // Este metodo sirve para solicitar la opcion del jugador y generar un random entre el 1 y el 3 que son las posibles elecciones
     public void jugar(){
         System.out.println(nombre+" por favor digite una opcion: \n 1. Piedra \n 2. Papel \n 3. Tijera");
         opcionJugador = entrada.nextInt();
@@ -52,6 +56,7 @@ public class Ppt implements Juego {
         numAle = aleatorio.nextInt(3)+1;
 
     }
+    // Este metodo servira para mostrar resultados de si el usuario gano perdio o empato
     public void finalizar(){
 switch (opcionJugador) {
             // Evaluamos en el caso 1
